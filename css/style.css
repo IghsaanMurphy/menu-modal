@@ -1,0 +1,62 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
+:root {
+  --english-violet: #493548ff;
+  --independence: #4b4e6dff;
+  --steel-teal: #6a8d92ff;
+  --dark-sea-green: #80b192ff;
+  --light-green: #a1e887ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+
+nav {
+  background-color: var(--steel-teal);
+  border-right: 2px solid rgba(75, 78, 109, 0.2);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  transform: translateX(-100%);
+  height: 100%;
+  z-index: 100;
+}
+
+nav .logo {
+  padding: 30px;
+  text-align: center;
+}
+
+nav .logo img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+nav ul li {
+  padding: 20px;
+  border-bottom: 2px solid rgba(75, 78, 109, 0.2);
+}
+
+nav ul li:first-of-type {
+  border-top: 2px solid rgba(75, 78, 109, 0.2);
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
