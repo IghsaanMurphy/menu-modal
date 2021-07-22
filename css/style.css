@@ -17,6 +17,11 @@ body {
   margin: 0;
 }
 
+body.show-nav {
+  /* WIDTH OF NAV */
+  transform: translateX(200px);
+}
+
 /* ********* NAV ********* */
 
 nav {
