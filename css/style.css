@@ -45,8 +45,8 @@ nav .logo {
 }
 
 nav .logo img {
-  height: 75px;
-  width: 75px;
+  /* height: 75px; */
+  width: 100%;
   border-radius: 50%;
 }
 
@@ -59,6 +59,9 @@ nav ul {
 nav ul li {
   padding: 20px;
   border-bottom: 2px solid rgba(75, 78, 109, 0.2);
+}
+nav ul li:hover {
+  background-color: rgba(115, 234, 255, 0.267);
 }
 
 nav ul li:first-of-type {
@@ -73,24 +76,59 @@ nav ul li a {
 /* ********* HEADER ********* */
 
 header {
-  background-color: var(--steel-teal);
+  background: black;
+  overflow: hidden;
   color: #fff;
   font-size: 130%;
   position: relative;
   padding: 40px 15px;
   text-align: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  opacity: 0.4;
 }
 
 header h1 {
-  margin: 0;
+  margin: 0 auto;
+  position: relative;
+  width: 500px;
+}
+
+.topText,
+.bottomText {
+  display: block;
+}
+
+.topText {
+  font-size: 50%;
+  position: absolute;
+  top: 0;
+  left: 45%;
+  transform: translateX(-45%);
+}
+.bottomText {
+  font-size: 150%;
+  letter-spacing: 10px;
 }
 
 header p {
-  margin: 30px 0;
+  margin: 15px 0 30px 0;
 }
 
 button {
-  background-color: var(--independence);
   border: 0;
   border-radius: 5px;
   color: #fff;
@@ -112,6 +150,15 @@ button:focus {
 .cta-btn {
   padding: 12px 30px;
   font-size: 20px;
+  background-color: #6a8d92ff;
+  z-index: 1;
+  transition: transform 0.2s ease;
+}
+
+.cta-btn:hover {
+  box-shadow: 5px 5px 10px rgb(56, 56, 56);
+  transform: translate(0, -3px);
+  background-color: rgb(79, 159, 173);
 }
 
 /* ********* CONTAINER ********* */
@@ -136,6 +183,7 @@ button:focus {
   height: 100vh;
   animation: modalOpen;
   animation-duration: 1s;
+  z-index: 10;
 }
 
 .show-modal {
