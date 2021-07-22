@@ -29,7 +29,7 @@
 
     <header>
       <button id="toggle" class="toggle">
-        <i></i>
+        <i class="fa fa-bars fa-2x"></i>
       </button>
 
       <h1>Landing Page</h1>
@@ -37,7 +37,105 @@
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, eos?
       </p>
+
+      <button class="cta-btn" id="open">Sign Up</button>
     </header>
+
+    <div class="container">
+      <h2>What is this Page About</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        ullam odit, quo provident, voluptatum aliquam molestiae beatae nisi
+        corporis at enim? Quae accusantium iure doloribus atque voluptas rem
+        voluptate laudantium.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aliquam
+        impedit dignissimos omnis similique ad nisi perspiciatis explicabo
+        nostrum tempora?
+      </p>
+
+      <h2>Tell Me More</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+        deleniti autem sint reiciendis dolor vel corrupti sed omnis laborum!
+        Suscipit, molestiae eos deleniti qui vel officia nam? Reprehenderit,
+        enim inventore?
+      </p>
+
+      <h2>Benefits</h2>
+      <ul>
+        <li>Lifetime Access</li>
+        <li>30 Day Money Back</li>
+        <li>Tailored Customer Support</li>
+      </ul>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+        exercitationem libero, reprehenderit, odit minima quasi facilis autem
+        aperiam earum commodi dolorem inventore ex, nesciunt repellat. Placeat
+        praesentium nam ex iusto? Voluptas non placeat suscipit soluta
+        consequatur nisi ducimus dolorem recusandae nobis, inventore, quo quidem
+        illum quis veritatis repudiandae iste veniam esse hic aspernatur in
+        doloribus labore impedit quas neque? Perferendis at consectetur,
+        adipisci voluptas modi sapiente facere dolor minima velit.
+      </p>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <button class="close-btn" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Sign Up</h3>
+        </div>
+        <div class="modal-content">
+          <p>Register with us to get offers, support and more</p>
+          <form class="modal-form">
+            <div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter Your Name"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter Your Email"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter A Password"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="password2">Password</label>
+              <input
+                type="password"
+                id="password2"
+                placeholder="Confirm Password"
+                class="form-input"
+              />
+            </div>
+            <input type="submit" value="submit" class="submit-btn" />
+          </form>
+        </div>
+      </div>
+    </div>
 
     <script src="js/app.js"></script>
   </body>
