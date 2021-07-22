@@ -10,6 +10,7 @@ toggle.addEventListener('click', () => document.body.classList.toggle('show-nav'
 // SHOW MODAL
 open.addEventListener('click', () => {
     modal.classList.add('show-modal');
+    // CLOSE NAV IF OPEN WHEN SIGNING UP
     if(document.body.className === 'show-nav'){
         document.body.classList.remove('show-nav');
     }
