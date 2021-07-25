@@ -494,7 +494,7 @@ footer a:hover {
     transform: translateX(60px);
   }
   .content-container-mid p {
-    width: 280px;
+    width: 220px;
   }
   .main-content h2,
   .main-content p {
@@ -527,8 +527,8 @@ footer a:hover {
     padding: 10px;
   }
   footer a:hover {
-    transform: translateY(-5px);
-    border-bottom-width: 8px;
+    transform: translateY(0);
+    border-bottom-width: 0px;
   }
   .social-media-links svg {
     height: 20px;
