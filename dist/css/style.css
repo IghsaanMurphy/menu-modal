@@ -106,7 +106,8 @@ header img {
 header h1 {
   margin: 0 auto;
   position: relative;
-  width: 500px;
+  /* transform: translateX(-15px); */
+  width: 100%;
 }
 
 .topText,
@@ -421,5 +422,121 @@ footer a:hover {
   }
   100% {
     opacity: 1;
+  }
+}
+
+/* ********* MEDIA QUERIES ********* */
+
+@media (max-width: 768px) {
+  .container {
+    width: 400px;
+    height: 100vh;
+  }
+  .main-content {
+    height: 85vh;
+    width: auto;
+    font-size: 80%;
+  }
+
+  .content-container-mid {
+    margin: 15px auto;
+    transform: translateX(60px);
+  }
+  .content-container-mid p {
+    width: 280px;
+  }
+  .main-content h2,
+  .main-content p {
+    padding: 2px;
+    margin: 0;
+  }
+  .first,
+  .third {
+    height: 150px;
+  }
+  .content-container-last h2 {
+    padding-left: 25px;
+  }
+  .first .nail {
+    top: 0;
+    left: 50%;
+  }
+  .second .nail {
+    top: -15%;
+    left: 60%;
+  }
+  footer div.social-media-links {
+    height: 45px;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 100%;
+  }
+  header p {
+    font-size: 80%;
+  }
+  .container {
+    width: 400px;
+  }
+  .main-content {
+    height: 90vh;
+    width: auto;
+    font-size: 80%;
+  }
+
+  .content-container-mid {
+    margin: 15px auto;
+    transform: translateX(60px);
+  }
+  .content-container-mid p {
+    width: 280px;
+  }
+  .main-content h2,
+  .main-content p {
+    padding: 2px;
+    margin: 0;
+  }
+  .first,
+  .third {
+    height: 150px;
+  }
+  .content-container-last h2 {
+    padding-left: 25px;
+  }
+  .first .nail {
+    top: 0;
+    left: 50%;
+  }
+  .second .nail {
+    top: -15%;
+    left: 60%;
+  }
+  footer {
+    display: block;
+  }
+  footer div.social-media-links {
+    height: 50px;
+    width: 100%;
+  }
+  footer a {
+    padding: 10px;
+  }
+  footer a:hover {
+    transform: translateY(-5px);
+    border-bottom-width: 8px;
+  }
+  .social-media-links svg {
+    height: 20px;
+  }
+  social-media-links a {
+    padding: 10px;
+  }
+  .mobile {
+    display: none;
   }
 }
